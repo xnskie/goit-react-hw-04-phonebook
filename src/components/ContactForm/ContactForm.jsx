@@ -7,10 +7,10 @@ import { Formik, Form, ErrorMessage } from 'formik';
 import { Button, Input, Label } from './ContactForm.styled';
 
 const ContactForm = ({ onSubmit }) => {
-  const [name, setName] = useState('');
-  const [number, setNumber] = useState('');
+  const [name] = useState('');
+  const [number] = useState('');
 
-// ievu
+// iev
   const handleSubmit = (values, action) => {
     onSubmit(values);
     action.resetForm();
